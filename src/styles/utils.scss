@@ -1,0 +1,36 @@
+@use "sass:math";
+
+$smScreen: 375px;
+$mdScreen: 630px;
+$maxScreen: 630px;
+
+@function pxsToRem($value) {
+  $remValue: math.div($value, 16) * 1rem;
+  @return $remValue;
+}
+
+@function debugColor() {
+  @return red;
+}
+
+@mixin debug() {
+  background-color: red;
+}
+
+@mixin breakPointUp($breakPoint) {
+  @media (min-width: $breakPoint) {
+    @content;
+  }
+}
+
+@mixin breakPointDown($breakPoint) {
+  @media (max-width: $breakPoint) {
+    @content;
+  }
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,56 @@
+@forward "./utils.scss";
+
+@font-face {
+  font-display: swap;
+  font-family: FolhaGrafico;
+  font-stretch: normal;
+  font-weight: 400;
+  src: url(https://static.folha.uol.com.br/fonts/hunting/folha-grafico/Folha_Grafico-Regular.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: FolhaGrafico;
+  font-stretch: normal;
+  font-weight: 600;
+  src: url(https://static.folha.uol.com.br/fonts/hunting/folha-grafico/Folha_Grafico-Medium.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: FolhaTexto;
+  src: url(https://static.folha.uol.com.br/fonts/hunting/folha-texto/Folha_Texto-Regular.woff2)
+    format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: FolhaGrafico, "FolhaGrafico", Helvetica, Arial;
+
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  font-weight: 400;
+}
+
+body,
+html {
+  color: #333;
+}
+
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+
