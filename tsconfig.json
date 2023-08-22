@@ -12,13 +12,14 @@
       "@/*": ["./src/*"],
       "~/*": ["./src/*"]
     },
-    "types": ["@nuxt/types", "@nuxt/typescript-build", "@types/node"]
+    "types": ["@nuxt/types", "@nuxt/typescript-build", "@types/node", "vitest", "@nuxt/test-utils", "@vue/test-utils"]
   },
   "exclude": ["node_modules"],
   "include": [
 		"src/**/*.d.ts",
 		"src/**/*.js",
 		"src/**/*.ts",
+		"src/**/*.test.ts",
 		"src/**/*.vue"
 	]
 }

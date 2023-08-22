@@ -32,3 +32,4 @@ export default defineNuxtConfig({
     assets: "/<rootDir>/assets",
   },
 });
+
